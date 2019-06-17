@@ -52,7 +52,8 @@ config :ten_thousand_dollar_homepage, TenThousandDollarHomepageWeb.Endpoint,
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
       ~r{lib/ten_thousand_dollar_homepage_web/views/.*(ex)$},
-      ~r{lib/ten_thousand_dollar_homepage_web/templates/.*(eex)$}
+      ~r{lib/ten_thousand_dollar_homepage_web/templates/.*(eex)$},
+      ~r{lib/my_app_web/live/.*(ex)$}
     ]
   ]
 
