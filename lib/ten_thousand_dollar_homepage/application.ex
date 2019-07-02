@@ -11,9 +11,10 @@ defmodule TenThousandDollarHomepage.Application do
       # Start the Ecto repository
       TenThousandDollarHomepage.Repo,
       # Start the endpoint when the application starts
-      TenThousandDollarHomepageWeb.Endpoint
+      TenThousandDollarHomepageWeb.Endpoint,
       # Starts a worker by calling: TenThousandDollarHomepage.Worker.start_link(arg)
       # {TenThousandDollarHomepage.Worker, arg},
+      TenThousandDollarHomepage.ConnectionsRegistry
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

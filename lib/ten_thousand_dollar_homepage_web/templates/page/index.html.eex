@@ -1,6 +1,7 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <%= Phoenix.LiveView.live_render(@conn, TenThousandDollarHomepageWeb.Clock) %>
+  <%= Phoenix.LiveView.live_render(@conn, TenThousandDollarHomepageWeb.Connections) %>
   <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
 </section>
 
