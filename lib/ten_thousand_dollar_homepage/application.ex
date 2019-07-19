@@ -14,7 +14,8 @@ defmodule TenThousandDollarHomepage.Application do
       TenThousandDollarHomepageWeb.Endpoint,
       # Starts a worker by calling: TenThousandDollarHomepage.Worker.start_link(arg)
       # {TenThousandDollarHomepage.Worker, arg},
-      TenThousandDollarHomepage.ConnectionsRegistry
+      TenThousandDollarHomepage.ConnectionsRegistry,
+      TenThousandDollarHomepage.GlobalCounter
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

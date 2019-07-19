@@ -2,6 +2,12 @@
   <h1><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h1>
   <%= Phoenix.LiveView.live_render(@conn, TenThousandDollarHomepageWeb.Clock) %>
   <%= Phoenix.LiveView.live_render(@conn, TenThousandDollarHomepageWeb.Connections) %>
+  <%= Phoenix.LiveView.live_render(@conn, TenThousandDollarHomepageWeb.Counter) %>
+  <%= for i <- 1..3 do %>
+    <%= for j <- 1..3 do %>
+      <%= i %><%= j %>
+    <% end %>
+  <% end %>
   <p>A productive web framework that<br/>does not compromise speed and maintainability.</p>
 </section>
 
